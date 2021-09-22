@@ -78,3 +78,47 @@ function areaCirculo(radio){
     + areaCirculo + "cm^2"
 );*/
 console.groupEnd();
+
+//Aqui interactuamos con el HTML
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
+
+function calcularAlturaTriangulo(){
+    const input1 = document.getElementById("inputLado1");
+    const lado1=input1.value;
+    const input2 = document.getElementById("inputLado2");
+    const lado2=input2.value;
+    const input3 = document.getElementById("inputLado3");
+    const lado3=input3.value;
+    let lado = 0;
+    let base = 0;
+    if (lado1 == lado2){
+        lado=lado1;
+        base=lado3;
+    }else if (lado2 == lado3){
+        lado=lado2;
+        base=lado1;
+    }else if (lado3 == lado1){
+        lado=lado1;
+        base=lado2;
+    }else{
+        alert("Dos de los lados deben ser iguales");
+    }
+
+    if(base!=0){
+    const altura = Math.sqrt((lado*lado)-((base/2)*(base/2)));
+    alert (altura);
+    }
+}
