@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos con cupones</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Descuentos con cupones
+        </h1>
+        <p>Este es el segundo taller del curso práctico de Javascript</p>
+    </header>
+    <section>
+        <h2>Calcula el precio a pagar de tus productoes aplicando los cupones de descuento</h2>
+        <form action="">
+            <label for="InputPrice">Escribe el precio de tu producto</label>
+            <input id="InputPrice" type="number">
+            
+            <label for="casillaCupon1" style="display: block"><input type="checkbox" id="casillaCupon1">Cupon1 10%</label>
+            <label for="casillaCupon2" style="display: block"><input type="checkbox" id="casillaCupon2">Cupon2 20%</label>
+            <label for="casillaCupon3" style="display: block"><input type="checkbox" id="casillaCupon3">Cupon3 50%</label>
+
+            <button type="Button" onclick = "ClickBotonCalcular()">Aplicar cupon</button>
+        </form>
+        <pc id="Resultado"></p>
+    </section>
+    
+    <script src="./cupones.js"></script>
+</body>
+</html>
